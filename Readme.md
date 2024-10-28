@@ -101,3 +101,7 @@ Now back to unformatted text<BR>
 </STRIKE></STRONG></EM>
 </BODY>
 </HTML>
+
+Prepare a two-paragraph text about your house. In this paragraph, mentionthat
+your house has a garden, drawing room, two bedrooms, etc. Develop an
+HTML document which displays these two paragraph in such a way that eachroom beomes apage of its own e.g. garden.html, drawing.html, kitchen.html.
