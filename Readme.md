@@ -156,4 +156,5 @@ Back to base font
 </HTML>
 
 
-Design a web page of your town and favorite friend using the elements discussed inthis chapter.
+Design a web page of your town and favorite friend using the elements discussed inthis chapter.=For this question we want to implement the use of marquee and base font size
+which we previouly covered.
