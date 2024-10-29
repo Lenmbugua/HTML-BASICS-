@@ -64,28 +64,6 @@ The bulk of the page goes here
 </BODY>
 </HTML>
 
-***Physical styles***
-
-They offer consistency in that something you tag a certain way will always be displayed that way for readers of your document. Examples of physical styles
-<B> Bold text
-<I> Italic text
-<TT> Typewriter text e.g. fixed-width font
-<U> Underline text
-<Strike> Strikethrough text
-<blink> Causes text to blink
-<Basefont> Used to specify the overall font for your page. It is added immediately after the <body> tag. It has a face, size and color attributes. It has noclosing tag. E.g. <body>
-<basefont face =”arial, verdana, courier” size=”5” color =”red”>Hellothis is my page.<br>This is text<br></body>
-<Font> It has face, size and color attributes. Font size: Used to set the size of the font from 1(smallest) to 7(largest)
-with size 3 being the normal text. Format- <font size =”6”>font size 6</font>
-The other method for using font tag is provided by relative size changefrom basefont size
-i.e. <basefont size=”5”>size five<br>
-<font size = “+1”> size six<br>
-<font size = “-1”>size four</font><br>
-Font face: Used to specify the desired font typeface. The faces selectedshould be standard. The browser uses the first font in the list availableonthe visitor’s computer. e.g. <body>
-<font face =”verdana, Helvetica,courier”>Some text here</font>Attributes
-<div align =”left”> This text is left aligned</div>
-<div align=right”> This text is right aligned</div>
-
 ***Example***
 <HTML>
 <HEAD>
