@@ -104,4 +104,78 @@ Now back to unformatted text<BR>
 
 Prepare a two-paragraph text about your house. In this paragraph, mentionthat
 your house has a garden, drawing room, two bedrooms, etc. Develop an
-HTML document which displays these two paragraph in such a way that eachroom beomes apage of its own e.g. garden.html, drawing.html, kitchen.html.
+HTML document which displays these two paragraph in such a way that eachroom beomes apage of its own e.g. garden.html, drawing.html, kitchen.html.-For this question we learn how to create links in html trhough the use of a href.
+
+**The element center ie <center> is used to specify that text,graphics,and tables shown are centered on the browser window.
+
+**Example**
+<HTML>
+<HEAD>
+<TITLE>This is my web page</TITLE>
+<!--Example of Centering -->
+</HEAD>
+<BODY>
+This text is not centered
+<CENTER>
+This text is centered
+</CENTER>
+This text is not
+</BODY>
+</HTML>
+
+**marquee**
+This is a tag that creates a scrolling text. i.e. <marquee>……….</marquee>
+-Marquee Align= top/middle/bottom
+This align the marquee with the top, middle or bottom of neighboring text line. -Marquee behavior = scroll/ slide / alternate
+This specifies the text behavior. -Marquee bgcolor = red
+Sets the background color of marquee. -Marquee direction = left/right
+This defines the direction in which the text scrolls
+-Marquee loop= number/infinitive
+This specifies the number of loops as a number value or infinite. -Marquee scrollamount = number
+Sets the number of pixels to move the content for each scroll movement -Marquee scrolldelay = number
+Specifies the delay in milliseconds between successive movement of the marqueecontent. -Marquee Hspace = number
+Sets the amount of space to clear left or right of the marquee. -Marquee Vspace= number
+Sets the amount of space to clear above or below the marquee.
+
+**Example**
+<HTML>
+<HEAD>
+<TITLE> My Web Page </TITLE>
+</HEAD>
+<BODY>
+<marquee behavior= alternate bgcolor= "white" hspace= 2
+vspace="4" >Some text here </marquee>
+</BODY>
+</HTML>
+
+**Base Font Size**
+The empty element <BASEFONT> allows you to change the size of the standardtext on the Web page displayed.
+**Example;**
+<HTML>
+<HEAD>
+<!—example of basefont size-->
+</HEAD>
+<BODY>
+<BASEFONT SIZE=5>
+The text here is size five
+</BODY>
+</HTML>
+**Font Size**
+The open element <FONT> allows the size of the text on the page to be altered
+**Example;**
+<BASEFONT SIZE=4>
+This paragraph shows some of the font styles available <BR>
+<FONT SIZE=1>size1 </FONT>
+<FONT SIZE=3>size3 </FONT>
+<FONT SIZE=5>size5 </FONT>
+<FONT SIZE=7>size7 </FONT> <BR>
+Back to base font size<BR>
+<FONT SIZE=5 COLOR=red>red </FONT>
+<FONT SIZE=6 COLOR=blue>blue </FONT>
+<FONT SIZE=7 COLOR=green>green </FONT><BR>
+Back to base font
+</BODY>
+</HTML>
+
+
+Design a web page of your town and favorite friend using the elements discussed inthis chapter.
