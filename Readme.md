@@ -158,3 +158,33 @@ Back to base font
 
 Design a web page of your town and favorite friend using the elements discussed inthis chapter.-For this question we want to implement the use of marquee and base font size
 which we previouly covered.
+
+**Colours and Textures**
+This section will exam changing the colours of the text and background of the webpages,and the use of textured wallpapers.
+
+**Background Color**
+BGCOLOR is used to change the color of the background window.
+Example Format;
+<HTML>
+<HEAD>
+<!--Example of changing background colour-->
+</HEAD>
+<BODY BGCOLOR=”#800080”>
+This web page has a purple background!
+</BODY>
+</HTML>
+**Background Wallpaper**
+The <BODY> element has BACKGROUNDattribute which is used to define the background image to be used on the
+page
+
+Example
+<HTML>
+<HEAD>
+<!--Example of Text colours-->
+</HEAD>
+<BODY BACKGROUND=”trainer/backlogo.gif”>
+This web page has a wallpaper background. </BODY
+
+**question**
+Design a document describing you. Assign a suitable background
+wallpaper, background colour and a text colour.
