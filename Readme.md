@@ -188,3 +188,136 @@ This web page has a wallpaper background. </BODY
 **question**
 Design a document describing you. Assign a suitable background
 wallpaper, background colour and a text colour.
+
+
+**Listing**
+. A list is a sequence of
+items, each displayed on a separate line and may be indented fromthe left
+margin. Lists can either be numbered or bulleted.
+
+**Unordered List**
+The open elements<UL> is used to define a list of items which are on separatelines and marked with a bullet.
+The empty element <LI> is used to define eachitem within the list ie
+<UL>
+<LI> first list item
+<LI> second list item etc. </UL>
+
+**Unordered List (Type)**
+Unordered list can be of
+TYPE = disc
+TYPE = circle
+TYPE = square
+
+Example;
+<HTML>
+<HEAD>
+<TITLE> My Web Page </TITLE>
+</HEAD>
+<BODY>
+<UL TYPE="square">
+<LI> first list item
+<LI> second list item
+</UL>
+</BODY>
+</HTML>
+Example of nested unordered list
+<HTML>
+<HEAD>
+<TITLE> example of nested UL </TITLE>
+</HEAD>
+<BODY>
+<UL>
+<LI> first item in the list
+<LI> second item in the list
+<UL TYPE="square">
+<LI> first list item
+<LI> second list item
+</UL>
+</UL>
+</BODY>
+</HTML>
+
+**Ordered List**
+The <OL> element is used to define a numbered list of items. It also uses
+<LI>
+**Ordered List (Type Start)**
+<OL Type="type" START=number>
+Type can be:
+1 uses numbers (default)
+a uses lower case letters in sequence
+A uses upper case letters in sequence
+i uses lower case Roman numbering i.e. i ii iii iv etc
+I uses upper case Roman numbering i.e. I II III IV etc. Number defines the starting number or letter
+
+Example
+<HTML>
+<HEAD>
+<TITLE> My Web Page </TITLE>
+</HEAD>
+<BODY>
+<OL TYPE=“a" START=3>
+<LI> first list item
+<LI> second list item etc. </OL>
+</BODY>
+</HTML>
+Menu Lists
+Menu lists are specified with the <MENU> element and are a form of unordered list. A menu list is a list of items which are supposed to have only one line per item. <HTML>
+<HEAD>
+<TITLE> example of nested UL </TITLE>
+</HEAD>
+<BODY>
+<menu>
+<LI> first item in the list
+<LI> second item in the list
+<menu TYPE="square">
+<LI> first list item
+<LI> second list item
+</menu>
+</menu>
+</BODY>
+</HTML>
+**Directory Lists**
+The <DIR> element is used to format a list of items up to 20 characters in length. This
+is basically a unordered list. <HTML>
+<HEAD>
+<TITLE> example of nested DIR </TITLE>
+</HEAD>
+<BODY>
+<DIR>
+<LI> first item in the list
+<LI> second item in the list
+<DIR TYPE="square">
+<LI> first list item
+<LI> second list item
+</DIR>
+</DIR>
+</BODY>
+</HTML>
+**Definition Lists**
+A definition list is a list of terms and corresponding definitions. The element<DL>is
+used to define a definition list. <DT> the term and <DD> the definition. <HTML>
+<HEAD>
+<TITLE> My Web Page </TITLE>
+</HEAD>
+<BODY>
+<DL>
+<DT> definition term
+<DD> definition etc. </DL>
+</BODY>
+</HTML>
+
+Exercises
+Do the following exercise so that the outcome is as displayed. EAST AFRICA COUNTRIES AND
+CITIES
+1.KENYA
+i. Nairobi
+ii. Kisumu
+iii. Mombasa
+2. UGANDA
+a. Entebe
+b. Kampala
+c. Tororo
+3. TANZANIA
+ Dar es salam
+ Arusha
+ Moshi
