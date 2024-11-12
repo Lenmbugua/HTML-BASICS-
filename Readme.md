@@ -321,3 +321,39 @@ c. Tororo
  Dar es salam
  Arusha
  Moshi
+
+**Graphical Images**
+This section will introduce the concept of graphical images and how to include themin web documents
+
+**Horizontal Rule**
+The closed <HR> element is used to define a horizontal rule. A horizontal rule is a
+horizontal graphical line drawn across the screen. A <BR> element is assumed belowand above the line. The <HR> element has the following attributes;
+SIZE- an indication of the line thickness
+<HR SIZE-num>
+WIDTH – An indication of the width of the line across the screen. It can be in pixels or as a percentage of the width of the web page. <HR WIDTH=num/percentage>
+ALIGN – The alignment of the line. This specifies whether the line should be alignedto the left, right or centered. NOSHADE – The line should not be shaded. This instructs the browser to displaythelines as a solid black line.
+
+**In-Line Images**
+The <IMG> element is used to incorporate images into web pages. Images are storedas separate files from the textual HTML document and are loaded and inserted whereapplicable. Graphical images are usually stored in either GIF or JPEG format. The <IMG>element supports the following attributes;
+SRC - The name and location of the image to be embedded. ALIGN – The alignment of the image to the document text. This allows you to
+specify whether the image is aligned at the top, bottom or middle of any text on the
+same line as the image. ALT – Alternative text to be displayed if the graphic is not. ISMAP – Defines the images as being a clickable map.
+
+**Setting an Image Border**
+It is possible to give a border of desired thickness to images. This is done using the
+border attribute in the <IMG> tag. The thickness of the border may be from1 pixels
+to 10 pixels. For example, when we write <IMG SRC=“elephant.gif” border=”5”>thepicture is shown with a 5 pixel thick border. This is illustrated in the following
+example
+<html>
+<head>
+<title> Elephant </title>
+</head>
+<body bgcolor= “aabbcc” text=”001100”><CENTER>,
+<img src=”elephant.gif” align=center width=250 height=175
+border=10></img>
+<hr>
+</body>
+</html>
+
+Design a web page of an international leader with an appropriate color
+combination.. Design it with suitable headings and horizontal rules. 2. Design a web page of your favorite town with images of what it looks like
