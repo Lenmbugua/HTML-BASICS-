@@ -357,3 +357,57 @@ border=10></img>
 
 Design a web page of an international leader with an appropriate color
 combination.. Design it with suitable headings and horizontal rules. 2. Design a web page of your favorite town with images of what it looks like
+
+
+**HYPERTEXT LINKS**
+This section of the course will examine some of the features of hypertext links andhow these can be combined with graphical images
+
+**INTERNAL HYPERLINKS**
+Assign location name to individual point in an HTML file
+Location name can then be added to the page’s URL
+Link to specific point on the page
+Location marked by including a NAME attribute in an A (anchor) element
+Ex. <A NAME = “features”></A> in list.html
+URL of location
+Format: page.html#name
+Ex. list.html#features
+A hot text is created with an anchor tag <A>text</A>. Format: <A HREF=”college.html”>St Xavier’s College</A>
+
+**External Hyperlinks**
+<A HREF> is used to connect to an external link.
+An external Hyperlinks to an existing web page
+It is possible to create hyperlinks to pages on other servers. This allows you to
+share the resources and information already available on other internet sites. The element <A> is used with attribute HREF to form a link to an existing
+web site page. Format: <A HREF=”location and name”>…</A>
+
+**In-Line Images as Links**
+The <A> text </A> hyperlink element is placed around text in order to forma
+hypertext link. Clicking on the image will result in the hyperlink being activated. Format: <A HREF=”location and file name”><IMG SRC=”name and location”></A>
+
+**Hyperlinks to Mail Dialogues**
+The <A> element can link to mail tool instead of another web page. Format: <A HREF=mailto:name@location>….</A>
+
+**Hyperlinks to Newsgroup Dialogues**
+The <A> hyperlink element can link to a newsgroup dialogue, instead of another webpage. Format: <A HREF=news:news.group>…..</A>
+
+**Hyperlinks to Files**
+Hyperlinks can point to files on a server as well as web pages, mail and news grouptools. Format: <A HREF=”/directory/myprog.exe”>
+
+**Embedding Files**
+The <EMBED> element allows you to embed document of any type into the page.
+Format: <EMBED SRC=”location and name”>
+<EMBED SRC=”location and name” HEIGHT=num1 WIDTH=num2>
+
+**Clickable Maps**
+A clickable map is the name given to an in-line image which has been defined as a
+clickable region. ISMAP is added to make the image clickable. Format: <IMG SRC=”name and location” ISMAP>
+10.22 Creating and Using Image Maps
+• Image maps – Designate certain sections of an image as hotspots – Use hotspots as anchors for linking
+– All elements of image map inside <MAP>…</MAP> tags – <MAP> tag requires NAME attribute
+• Ex. <MAP NAME = “picture”>
+• Hotspots designated with AREA element – AREA attributes: • HREF sets the target for the link on that spot • SHAPE and COORDS set the characteristics of the AREAALT provides alternate textual description
+
+Exercise
+Write the names of several countries in a paragraph and store it as an HTMLdocument, “world.html”. Each continents name must be a hot text. When you clickEurope, it should open a file called “Europe.html”. So prepare “Europe.html”,” America.html”, “Africa.html”,” Asia.html” and “Australia.html”. Each of the HTMLdocuments must give a brief introduction of the continent and list a fewimportant
+countries in it. Each country’s name must be a hot text. When you click India (for
+example), it must open “India.html
