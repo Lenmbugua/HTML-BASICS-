@@ -411,3 +411,191 @@ Exercise
 Write the names of several countries in a paragraph and store it as an HTMLdocument, “world.html”. Each continents name must be a hot text. When you clickEurope, it should open a file called “Europe.html”. So prepare “Europe.html”,” America.html”, “Africa.html”,” Asia.html” and “Australia.html”. Each of the HTMLdocuments must give a brief introduction of the continent and list a fewimportant
 countries in it. Each country’s name must be a hot text. When you click India (for
 example), it must open “India.html
+
+**Forms**
+**Introduction to Forms**
+A form is a web page which uses HTML form elements. Form elements provide a
+convenient method to collect user input through a web page.
+
+**Basic Form elements**
+The <FORM>…</FORM> element is used to define the start and end of a forminadocument. There can be several forms on a page; however forms should not be nested. The <FORM> element has two attributes:
+1. ACTION ; This attribute defines the URL of the program that will receive andnprocess the data submitted on the form. All forms need to be linked to a
+program in order that their data can be processed.
+2. METHOD; This attribute defines the method in which the data will be
+transmitted to the server. METHOD can take one of these values POST or
+GET. With the default method being GET
+
+Format: <FORM METHOD=POST|GET ACTION=”name and location”>
+</FORM>
+Example 1
+Example of Form
+<HTML>
+<HEAD><!—Example of form element-->
+</HEAD>
+<BODY>
+<FORM METHOD=POST ACTION=“location and file name”>
+This is a blank form!
+</FORM>
+</BODY>
+</HTML>
+
+**Basic Form Input**
+HTML provides a number of different form fields who’s contents can be edited bytheuser. The <INPUT> element is used to specify the majority of these. <INPUT>elements have an attribute value which can be one of the following types:
+i. CHECKBOX
+ii. HIDDEN
+iii. PASSWORD
+iv. RADIO
+v. RESET
+vi. SUBMIT
+vii. TEXT
+
+Submit and Reset
+All forms require a SUBMIT and RESET button. These produce a button on the
+screen which the user can click on to transfer data on the form to the server program. While RESET clears the any data entered on the form. Example 2
+<HTML>
+<HEAD><!—Example of submit and reset-->
+</HEAD>
+<BODY>
+<FORM METHOD=POST ACTION=“location and file name”>
+This is my form!
+<input type=submit value=“send information” name=“submit”> <br>
+<input type=reset value=“clear the form” name=“reset” </FORM>
+</BODY>
+</HTML>
+
+**Checkbox Fields**
+If the <INPUT> element has the attribute set to CHECKBOX then a checkbox fieldis
+generated. A checkbox can take the following attribute:
+i. NAME is the unique name of the checkbox field. ii. VALUE the data sent to the program is contained within the VALUEattribute. iii. CHECKED is used to set whether a checkbox is selected.
+
+<HTML>
+<HEAD><!—Example of checkbox-->
+</HEAD>
+<BODY>
+<FORM METHOD=POST ACTION=“location and file name”>What doyou think about forms<p>
+<input type=checkbox Name=Fun value=Y>
+This course is fun <p>
+<input type=checkbox Name=Tutor value=Y >
+The tutor is great<BR>
+<input type=checkbox Name=Home value=Y>
+I want to go home<BR>
+<input type=Submit value=“send information”> <BR>
+<input type=Reset value=“clear form”>
+</FORM>
+</BODY>
+</HTML>
+
+**Radio Button Fields**
+If the input element has the attribute set to RADIO a radio button field is generated. RADIO is used when you wish to accept a single value from a set of alternatives. It
+takes the attributes, NAME, VALUE, CHECKED.
+
+<HTML>
+<HEAD> <!—Example of radio button-->
+</HEAD>
+<BODY>
+<FORM METHOD=POST ACTION=“location and file name”>
+What is your favourite colour <p>
+<INPUT TYPE=RADIO NAME=COLOUR value=RED> Red <BR>
+<INPUT TYPE=RADIO NAME=COLOUR value=GREEN> Green <BR>
+<INPUT TYPE=RADIO NAME=COLOUR value=BLUE> Blue <BR>
+<INPUT TYPE=RADIO NAME=COLOUR value=YELLOW> Yellow<BR>
+<INPUT TYPE=RADIO NAME=COLOUR value=WHITE> White<BR>
+<INPUT TYPE=SUBMIT VALUE=“send information”> <BR>
+<INPUT TYPE=RESET VALUE=“clear form”>
+</FORM>
+</BODY>
+</HTML>
+
+**Text Fields**
+Text fields are used when you wish to accept a line of typed text, such as a person’s
+name. A text field takes the attributes; NAME, VALUE, SIZE, MAXLENGTH.
+
+<HTML>
+<HEAD> <!—Example of a text field-->
+</HEAD>
+<BODY>
+<FORM METHOD=POST ACTION=“location and file name”>
+Please enter your name
+<p>
+<INPUT TYPE=TEXT NAME=NAME SIZE=30>
+<BR>
+<INPUT TYPE=SUBMIT VALUE=“send information”> <BR>
+<INPUT TYPE=RESET VALUE=“clear form”>
+</FORM>
+</BODY>
+</HTML>
+
+**Password Fields**
+These are identical to text field, except the text is displayed as **** as it is entered. Example 6
+<HTML>
+<HEAD> <!—Example of a text field-->
+</HEAD>
+<BODY>
+<FORM METHOD=POST ACTION=“location and file name”>
+Please enter your name
+<p>
+<INPUT TYPE=PASSWORD NAME=NAME SIZE=30>
+<BR>
+<INPUT TYPE=SUBMIT VALUE=“send information”> <BR>
+<INPUT TYPE=RESET VALUE=“clear form”>
+</FORM>
+</BODY>
+</HTML>
+
+**Text Area Fields**
+The <TEXTAREA>…</TEXTAREA> element is used to enable a user enter in morethan one line of text. It takes three attributes i.e, NAME, ROWS and COLS.
+
+<HTML>
+<HEAD> <!—Example of a textarea field-->
+</HEAD>
+<BODY>
+<FORM METHOD=POST ACTION=“location and file name”>
+<TEXTAREA NAME=MESSAGE ROWS=5 COLS=50>
+Please enter your message here!
+</TEXTAREA>
+<BR>
+<INPUT TYPE=SUBMIT VALUE=“send information”>
+<BR>
+<INPUT TYPE=RESET VALUE=“clear form”>
+</FORM>
+</BODY>
+</HTML>
+
+**Menu Fields**
+Pull down menus can be created through the open element <SELECT>…</SELECT>. Every option in this list is defined using a <OPTION> element. The <SELECT>element can take the attributes MULTIPLE, NAME, SIZE.
+
+<HTML>
+<HEAD> <!—Example of MENU field-->
+</HEAD>
+<BODY>
+<FORM METHOD=POST ACTION=“location and file name”>
+Please select your favourite colours:
+<BR>
+<SELECT NAME=MENU MULTIPLE SIZE=5>
+<OPTION > Red
+<OPTION > White
+<OPTION SELECTED > Orange
+<OPTION > Blue
+<OPTION > Yellow
+<OPTION > Green
+</SELECT>
+<BR>
+<INPUT TYPE=SUBMIT VALUE=“send information”>
+<BR>
+<INPUT TYPE=RESET VALUE=“clear form”>
+</FORM>
+</BODY>
+</HTML>
+
+
+Exercise
+Write an HTML code to design the following information;
+i. Are you a vegetarian or a non-vegetarian?  Vegetarian
+ Non-vegetarian
+ii. What is your profession?  Teaching
+ Research
+ Medicine  Engineering
+ Clerical  Business  Other
+iii. Type your comments on our food items. ( use textarea field)
+
+
