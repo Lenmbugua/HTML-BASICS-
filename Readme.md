@@ -599,3 +599,129 @@ ii. What is your profession?  Teaching
 iii. Type your comments on our food items. ( use textarea field)
 
 
+**TABLES**
+
+A table is a convenient way of displaying text, graphics or a combination of both inrows and columns.
+Advantages – control over text layout – easy to use
+Disadvantages – not all browsers can display
+– over-use can cause problems – non graphical browsers may have serious problems
+
+**Heading Cells**
+The <TH> element stands for table header. Header cells are identical to data cells, except that they are in bold font and to the center of the cell. Format: <TH> text </TH>
+<HTML>
+<HEAD><TITLE> EXAMPLE OF TABLE</TITLE>
+</HEAD>
+<BODY>
+<TABLE>
+<CAPTION ALIGN=TOP>Information on Cars</CAPTION>
+<TR><TH>Car</TH><TD>Ferrari</TD><TD>Toyota</TD><TD>Nissan</TD>
+</TR>
+<TR><TH>Cost</TH><TD>$70000</TD><TD>$40000</TD><TD>$20000</TD>
+</TR>
+<TR><TH>Colour</TH><TD>Red</TD><TD>Blue</TD><TD>White</
+TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+
+**Adding Captions**
+The <CAPTION>..</CAPTION> should appear within the <TABLE> elements but
+not inside any row or cell definitions. It has attribute ALIGN. Format: <CAPTION ALIGN=TOP|BOTTOM>text </CAPTION>
+<HTML>
+<HEAD><TITLE> EXAMPLE OF TABLE</TITLE>
+</HEAD>
+<BODY>
+<TABLE BORDER=1 CELLSPACING=3 CELLPADDING=2
+WIDTH=80%>
+<CAPTION ALIGN=TOP>Information on Cars</CAPTION>
+<TR><TH>Car</TH><TD>Ferrari</TD><TD>Toyota</TD><TD>Nissan</TD>
+</TR>
+<TR><TH>Cost</TH><TD>$70000</TD><TD>$40000</TD><TD>$20000</TD>
+</TR>
+<TR><TH>Colour</TH><TD>Red</TD><TD>Blue</TD><TD>White</
+TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+
+**Altering the look of the table**
+
+The <TABLE> element has the following attributes:
+a. BORDER this instructs the browser to display the table with borders around all table cells. 
+b. CELLSPACING=num allows the amount of space inserted between individual cells to be altered. 
+c. CELLPADDING=num allows the amount of space between the border of a cell and the contents of the cells to be altered. 
+d. WIDTH=num or percent. It is used to define the desires width of the table
+<HTML>
+<HEAD><TITLE> EXAMPLE OF TABLE</TITLE>
+</HEAD>
+<BODY>
+<TABLE BORDER=1>
+<CAPTION ALIGN=TOP>Information on Cars</CAPTION>
+<TR ALIGN=RIGHT
+VALIGN=MIDDLE><TH>Car</TH><TD>Ferrari</TD><TD>Toyota</
+TD><TD>Nissan</TD>
+</TR>
+<TR><TH>Cost</TH><TD>$70000</TD><TD>$40000</TD><TD>$20000</TD>
+</TR>
+<TR><TH>Colour</TH><TD>Red</TD><TD>Blue</TD><TD>White</
+TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+
+**Altering the look of the Table Row**
+The <TR> element can use both ALIGN and VALIGN
+
+
+**Altering the look of a Table Cell**
+The <TH> heading and <TD> data elements use the following attributes:
+a. ALIGN, this controls whether text inside the table cell is aligned to the left, right or centred within the cell. 
+b. VALIGN, controls whether text inside the table cell is aligned to the top, bottom or vertically centred.
+c. NOWRAP, this means that the lines within a cell cannot be broken to fit the width of the cell. 
+d. COLSPAN, specifies how many columns the cell should span. 
+e. ROWSPAN, Specifies how many rows the cell should span
+
+<HTML>
+<HEAD><TITLE> EXAMPLE OF TABLE</TITLE>
+</HEAD>
+<BODY>
+<TABLE BORDER=1>
+<CAPTION ALIGN=TOP>Information on Cars</CAPTION>
+<TR ><TH COLSPAN=2
+ALIGN=CENTER>Car</TH><TD>Ferrari</TD><TD>Toyota</TD><TD>Nissan</TD>
+</TR>
+<TR><TH VALIGN=MIDDLE ROWSPAN=2>Cost</TH><TDALIGN=RIGHT>$70000</TD><TD>$40000</TD><TD>$20000</TD></TR>
+<TR><TH>Colour</TH><TD>Red</TD><TD>Blue</TD><TD>White</
+TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+
+**Images in Tables**
+Images can be placed within tables as well as text, consider:
+HTML>
+<HEAD><TITLE> EXAMPLE OF TABLE</TITLE>
+</HEAD>
+<BODY>
+<TABLE BORDER=1>
+<CAPTION ALIGN=TOP>Information on Cars</CAPTION>
+<TR ><TH COLSPAN=2
+ALIGN=CENTER>Car</TH><TD>Ferrari</TD><TD>Toyota</TD><TD>Nissan</TD>
+</TR>
+<TR><TH VALIGN=MIDDLE ROWSPAN=2>Cost</TH><TDALIGN=RIGHT>$70000</TD><TD>$40000</TD><TD>$20000</TD></TR>
+<TR><TH>Colour</TH><TD><IMG SRC=“location&file name.gif”></TD><TD>Blue</TD><TD>White</TD>
+</TR>
+</TABLE>
+</BODY>
+</HTML>
+
+
+Exercise
+1. Write an HTML program that produces a table that shows the endof semester timetable for exams. 
+2. Write an HTML program for your bio-data using tables.
+
+
