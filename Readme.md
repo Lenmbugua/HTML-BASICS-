@@ -724,4 +724,67 @@ Exercise
 1. Write an HTML program that produces a table that shows the endof semester timetable for exams. 
 2. Write an HTML program for your bio-data using tables.
 
+**Frames**
+This lesson looks at the concept of frames that is supported by many browsers and is commonlyused in web sites.
+**Frame Documents**
+A frame document is a web document which specifies the size and shape of each of the frameson the web page. The frame document also specifies the name and location of the web page to be displayed in each of the frames. A frame document has a basic structure as shown below:
+<HTML>
+<HEAD>
+</HEAD>
+<FRAMESET>
+</FRAMESET>
+</HTML>
 
+**Basic Frame Elements**
+The <FRAMESET>…</FRAMESET> element is used to define the start and end of a framecontainer. The <FRAMESET> element has two attributes.
+ROWS and COLS. These attributestake a comma separated list of values in quotation marks. These attributes can be in absolutepixels or in percentages between 1% - 100%. 
+The special character * can be used to denote arelative sized frame (the remaining space to the frame). However, before we can illustrate the use of the <FRAMESET> element we need to be abletodefine the URL address of the pages which are to be displayed with these frames. 
+The <FRAME> element is used to define a single frame within a <FRAMESET>. The <FRAME>element may occur only inside <FRAMESET> elements. The <FRAME> element has six attributed:
+a. SRC define the URL of the web page to be displayed. 
+b. NAME allows an individual frame to be named. 
+c. MARGINWIDTH and MARGINHEIGHT allows space between images and text withina frame and frame boundary to be adjusted. 
+d. SCROLLING determines whether a window will be allowed to be scrolled when its contents are displayed. 
+e. NORESIZE specifies that the user cannot resize the frames by dragging a frame edgetoanew position.
+
+**Column Frames**
+<HTML>
+<HEAD> <!—Example of column frames-->
+</HEAD>
+<frameset cols=“100,60%,*”>
+<NOFRAMES>
+This document uses frames
+</NOFRAMES>
+<frame SRC=“location and file name” SCROLLING=NO>
+<frame SRC=“location and file name”NORESIZE>
+<frame SRC=“location and file name”>
+</frameset>
+</HTML>
+
+**Row Frames**
+<HTML>
+<HEAD> <!—Example of Row frames-->
+</HEAD>
+<frameset ROWS=“100,60%,*”>
+<NOFRAMES>
+This document uses frames
+</NOFRAMES>
+<frame SRC=“location and file name” SCROLLING=NO>
+<frame SRC=“location and file name”NORESIZE>
+<frame SRC=“location and file name”>
+</frameset>
+</HTML>
+
+
+**Combining Column and Row Frames**
+<HTML>
+<HEAD> <!—Example of Row frames-->
+</HEAD>
+<frameset COLS=“40%,*”>
+<NOFRAMES>
+This document uses frames
+</NOFRAMES>
+<frame SRC=“location and file name”>
+<frameset ROWS=“20%,*”>
+<frame SRC=“location and file name”>
+</frameset>
+</HTML>
